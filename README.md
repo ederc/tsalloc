@@ -1,4 +1,5 @@
 xalloc
 ======
 
-exchanging Singular&#39;s omalloc memory manager by any other malloc
+Exchange for Singular's omalloc memory manager in order to get a thread-safe 
+Singular using, for example, systems malloc.
