@@ -83,6 +83,7 @@ static inline void * omMemDup(void * s)
 }
 
 #define omSizeWOfAddr(P)         (xSizeOfAddr(P)/sizeof(long))
+#define omSizeOfAddr(P)          xSizeOfAddr(P)
 #define omTypeAllocBin(T,P,B)    P=(T)xAllocFromBin(B)
 #define omTypeAlloc(T,P,S)       P=(T)xMalloc(S)
 #define omTypeAlloc0Bin(T,P,B)   P=(T)xAlloc0FromBin(B)
