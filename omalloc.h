@@ -154,6 +154,11 @@ static inline void * omMemDup(void * s)
 #define omReallocSizeFunc xReallocSize
 #define omFreeSizeFunc xFreeSize
 
+#define omError_NoError NULL
+#define omTestList(ptr,level)
+
+#define sizeW sizeInWords
+
 
 
 char * omFindExec (const char *name, char* executable);
