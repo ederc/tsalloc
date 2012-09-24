@@ -122,7 +122,7 @@ static inline void * omMemDup(void * s)
 #define omMemCpyW(A,B,S)         memcpy(A,B,(S)<<2)
 #define omMemcpyW(A,B,S)         memcpy(A,B,(S)<<2)
 #define omGetSpecBin(A)          xGetSpecBin(A)
-#define omUnGetSpecBin(A)        ((void)0)
+#define omUnGetSpecBin(A)        xUnGetSpecBin(A,0)
 #define memcpyW(A,B,C)         memcpy(A,B,(C)*sizeof(long))
 #define omGetStickyBinOfBin(B) xGetStickyBinOfBin(B)
 
